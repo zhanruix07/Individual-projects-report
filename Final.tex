@@ -1,0 +1,72 @@
+% !Mode:: "TeX:UTF-8"
+% !TEX program  = xelatex
+\documentclass[withoutpreface,bwprint]{cumcmthesis} 
+\input{Misc/preamble.tex}
+%以上为格式规定与包的引用，勿动。以下为正文内容，从标题开始
+
+%标题
+\title{Title}
+
+\renewcommand{\headrulewidth}{0pt} % 不显示页眉线
+\renewcommand{\footrulewidth}{0pt} % 不显示页脚线\left( 
+\begin{document}
+ \maketitle
+%英文摘要
+\renewcommand{\abstractname}{Abstract}
+\renewcommand{\keywords}{\textbf{Keywords：}}
+\begin{abstract}
+\begin{spacing}{1.6}
+
+%英文摘要内容
+\end{spacing}
+\large
+
+
+%本实验包括两个部分，分别研究了理想气体在绝热过程和等温过程中的膨胀变化。在绝热过程中通过实验测量数据的计算热容比，结果为1.357，相比于理想情况（1.4）存在3.07%的误差。在等温过程中通过实验测量数据的计算体积比，结果为2.330，相比于理想情况（2.4615）存在9.28%的误差。两个实验结果都基本符合理论情况，仅存在较小的误差。由于两个结果都相较于理论情况偏小，因此这一误差可能由相似的原因导致。例如实际气体并非理想气体导致测量数据偏小，环境条件控制不精确等，并提供了一些解决方法。
+\end{abstract}
+
+%目录（前三行为目录格式调整）
+%\cftsetindents{section}{0em}{2em}
+%\cftsetindents{subsection}{2em}{3em}
+%\cftsetindents{subsubsection}{4em}{4em}
+\newpage
+{
+	\fontspec{Times New Roman}
+	\tableofcontents
+}
+\newpage
+
+%
+%以下部分为正文内容
+\input{1.Introduction/introduction.tex}
+%theory
+\input{2.Mathematical_model/mathematical_model.tex} 
+% method
+\input{3.Discussion/discussion.tex}
+%result
+\input{4.Results/results.tex}
+%analyse
+\input{5.Conclusion/conclusion.tex}
+%Conclusion
+
+%参考文献
+\input{Misc/reference.tex}
+\newpage
+\begin{thebibliography}{99}
+\bibitem{1} book
+\bibitem{2} \url{WEBSITE}
+\end{thebibliography}
+
+%附录
+% Appendix
+%\appendix
+%\pagenumbering{roman}
+%\input{6.Appendix/appendix_A.tex}
+%\input{6.Appendix/appendix_B.tex}
+%\input{6.Appendix/appendix_C.tex}
+
+%Example部分用于存放各种样例
+\newpage
+\input{Example/example.tex}
+
+\end{document} 
