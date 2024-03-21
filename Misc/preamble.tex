@@ -19,7 +19,8 @@
 %英文字体定义
 \usepackage{setspace}
 \usepackage{fontspec}
-
+\usepackage{verbatim}
+\bibliographystyle{unsrt}
 %''' 
 %以上为宏包的引用
 
@@ -64,21 +65,27 @@
 %\renewcommand{\footrulewidth}{0pt} % 不显示页脚线
 
 %以下编辑为Final report设置
+%%正文格式定义
+\setlength{\parskip}{5pt plus 1pt minus 1pt} % space between paragraphs
+\setlength{\parindent}{0pt} % paragraph indentation
+
+
+
 
 %% 章节标题定义
 \usepackage{titlesec}
 \titleformat{\section}
-{\fontsize{16}{18.4}\selectfont\bfseries\fontspec{Arial}}{\thesection}{1em}{}
+{\fontsize{16}{18.4}\selectfont\bfseries\fontspec{Arial}}{\thesection}{0.5em}{}
 \titleformat{\subsection}
-{\fontsize{14}{21}\selectfont\bfseries\itshape\fontspec{Cambria}}{\thesubsection}{1em}{}
+{\fontsize{14}{16.1}\selectfont\bfseries\itshape\fontspec{Cambria}}{\thesubsection}{3em}{}
 \titleformat{\subsubsection}
-{\fontsize{14}{21}\selectfont\bfseries\itshape\fontspec{Cambria}}{\thesubsection}{1em}{}
+{\fontsize{12}{15}\selectfont\bfseries\itshape\fontspec{Cambria}}{\thesubsubsection}{3em}{}
 \titlespacing*{\section}
-{0pt}{12pt plus 4pt minus 2pt}{6pt plus 2pt minus 2pt}
+{0pt}{12pt plus 4pt minus 2pt}{7pt plus 2pt minus 2pt}
 \titlespacing*{\subsection}
-{0.63cm}{6pt plus 4pt minus 2pt}{6pt plus 2pt minus 2pt}
+{0.63cm}{12pt plus 4pt minus 2pt}{7pt plus 2pt minus 2pt}
 \titlespacing*{\subsubsection}
-{0.63cm}{6pt plus 4pt minus 2pt}{6pt plus 2pt minus 2pt}
+{0.63cm}{12pt plus 4pt minus 2pt}{7pt plus 2pt minus 2pt}
 
 %%目录
 % 标题格式
